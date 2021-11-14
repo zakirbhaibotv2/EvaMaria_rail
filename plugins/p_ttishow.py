@@ -47,11 +47,16 @@ async def save_group(bot, message):
     else:
         for u in message.new_chat_members:
             if (temp.MELCOW).get('welcome') is not None:
+       buttons = [[
+           InlineKeyboardButton('❗ How to request❗', text='Just send any Movie Name.\n➤ Example: Home , Inception..\n#ProTip: Copy paste Movie name from Google.')
+           ]]
                 try:
+                    reply_markup=InlineKeyboardMarkup(buttons)
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
+            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>"
+                                     reply_markup=reply_markup)
                                                          
 
 
