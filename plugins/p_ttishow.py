@@ -53,7 +53,10 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
+            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
+                                           reply_markup=InlineKeyboardMarkup([
+                           [InlineKeyboardButton("❗ How To Search ❗", text="Just send any Movie \n ➤ Example: Kala , Inception ..\n#ProTip: Copy paste Movie name from Google.")]
+                       ]))
                                                          
 
 
