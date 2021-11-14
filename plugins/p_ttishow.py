@@ -53,7 +53,7 @@ async def save_group(bot, message):
                     pass
             temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>"
                                                          reply_markup=InlineKeyboardMarkup([
-                                     [InlineKeyboardButton("Support Group", url="https://t.me/malayayalies")]
+                                     [InlineKeyboardButton("❗ How to request❗", text="Just send any Movie Name.\n➤ Example: Home , Inception..\n#ProTip: Copy paste Movie name from Google.")]
                                  ]))
 
 
