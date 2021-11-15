@@ -50,12 +50,13 @@ async def save_group(bot, message):
                 
                 try:
                     await (temp.MELCOW['welcome']).delete()
+@Client.on_callback_query(filters.regex(r"❗ How To Search ❗"))
+async def next_page(bot, query):
+
+        return await query.answer("oKda", show_alert=True)
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
-                                           reply_markup=InlineKeyboardMarkup([
-                           [InlineKeyboardButton("❗ How To Search ❗", show_alert="Just send any Movie \n ➤ Example: Kala , Inception ..\n#ProTip: Copy paste Movie name from Google.")]
-                       ]))
+            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
                                                          
 
 
