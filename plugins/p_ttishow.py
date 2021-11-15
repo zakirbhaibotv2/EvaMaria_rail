@@ -50,10 +50,10 @@ async def save_group(bot, message):
                 
                 try:
                     await (temp.MELCOW['welcome']).delete()
+                    
 @Client.on_callback_query(filters.regex(r"❗ How To Search ❗"))
 async def next_page(bot, query):
-
-        return await query.answer("Just send any Movie \n ➤ Example: Home , Inception ..\n#ProTip: Copy paste Movie name from Google.", show_alert=True)
+    return await query.answer("Just send any Movie \n ➤ Example: Home , Inception ..\n#ProTip: Copy paste Movie name from Google.", show_alert=True)
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
