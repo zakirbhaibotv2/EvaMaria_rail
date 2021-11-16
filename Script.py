@@ -104,3 +104,6 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
+HOW_TXT = """Just send any Movie 
+ ➤ Example: Home , Inception ..
+#ProTip: Copy paste Movie name from Google."""
