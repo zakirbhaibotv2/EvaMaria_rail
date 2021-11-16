@@ -10,13 +10,6 @@ from pyrogram.errors import ChatAdminRequired
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
 
-HOW_DL = """
-Follow the step..
-🌀Just send any Movie 
-➤ Example: Home , Inception ..
-#ProTip: Copy paste Movie name from Google.
-"""
-
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
     r_j_check = [u.id for u in message.new_chat_members]
