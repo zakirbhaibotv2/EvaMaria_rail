@@ -10,7 +10,7 @@ from pyrogram.errors import ChatAdminRequired
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
 
-HOW_DL = """
+HOW_DL="""
 Follow the step..
 🌀Just send any Movie 
 ➤ Example: Home , Inception ..
@@ -59,9 +59,7 @@ async def save_group(bot, message):
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
-                                     reply_markup=InlineKeyboardMarkup([
-                           [InlineKeyboardButton("❗How To Request❗", callback_data="HOW_DL")]
-                       ]))
+                                                         
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
