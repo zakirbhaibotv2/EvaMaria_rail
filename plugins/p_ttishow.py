@@ -10,7 +10,7 @@ from pyrogram.errors import ChatAdminRequired
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
 
-HOW_DL ="""
+HOW_DL = """
 Follow the step..
 🌀Just send any Movie 
 ➤ Example: Home , Inception ..
