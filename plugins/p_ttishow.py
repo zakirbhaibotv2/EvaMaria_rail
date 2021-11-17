@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('🔰 SERIES', url='https://t.me/netflixorgi')
+            InlineKeyboardButton('📢 Updates', url='https://t.me/TeamEvamaria')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -51,8 +51,7 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
-                                                         
+            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
@@ -78,6 +77,42 @@ async def leave_a_chat(bot, message):
         await bot.leave_chat(chat)
     except Exception as e:
         await message.reply(f'Error - {e}')
+
+@Client.on_message(filters.command('disable') & filters.user(ADMINS))
+async def disable_chat(bot, message):
+    if len(message.command) == 1:
+        return await message.reply('Give me a chat id')
+    r = message.text.split(None)
+    if len(r) > 2:
+        reason = message.text.split(None, 2)[2]
+        chat = message.text.split(None, 2)[1]
+    else:
+        chat = message.command[1]
+        reason = "No reason Provided"
+    try:
+        chat_ = int(chat)
+    except:
+        return await message.reply('Give Me A Valid Chat ID')
+    cha_t = await db.get_chat(int(chat_))
+    if not cha_t:
+        return await message.reply("Chat Not Found In DB")
+    if cha_t['is_disabled']:
+        return await message.reply(f"This chat is already disabled:\nReason-<code> {cha_t['reason']} </code>")
+    await db.disable_chat(int(chat_), reason)
+    temp.BANNED_CHATS.append(int(chat_))
+    await message.reply('Chat Succesfully Disabled')
+    try:
+        buttons = [[
+            InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
+        ]]
+        reply_markup=InlineKeyboardMarkup(buttons)
+        await bot.send_message(
+            chat_id=chat_, 
+            text=f'<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b> \nReason : <code>{reason}</code>',
+            reply_markup=reply_markup)
+        await bot.leave_chat(chat_)
+    except Exception as e:
+        await message.reply(f"Error - {e}")
 
 
 @Client.on_message(filters.command('enable') & filters.user(ADMINS))
