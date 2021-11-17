@@ -48,7 +48,7 @@ async def save_group(bot, message):
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
     await message.reply_text(
-        f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
+        f"<b>Hey , {temp.U_NAME}, Welcome to {message.chat.title}</b>",
         parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
