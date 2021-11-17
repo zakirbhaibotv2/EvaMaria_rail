@@ -44,17 +44,20 @@ async def save_group(bot, message):
         await message.reply_text(
             text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
             reply_markup=reply_markup)
-    else:
-        for u in message.new_chat_members:
-            if (temp.MELCOW).get('welcome') is not None:
-                try:
-                    await (temp.MELCOW['welcome']).delete()
-                except:
-                    pass
-            temp.MELCOW['welcome'] = await message.edit_text(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
-                                                             reply_markup=InlineKeyboardMarkup([
-                                     [InlineKeyboardButton("❗HOW TO REQUEST ❗", callback_data="HOW_TXT")]
-                                 ]))
+    @Bot.on_message(filters.private & filters.media)
+async def _main(_, message):
+    await message.reply_text(
+        "Where you want to Upload?",
+        parse_mode="Markdown",
+        disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [InlineKeyboardButton("Upload to GoFile.io", callback_data="uptogofile"),
+                 InlineKeyboardButton("Upload to Streamtape", callback_data="uptostreamtape")]
+            ]
+        ),
+        quote=True
+    )
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
