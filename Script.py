@@ -107,3 +107,5 @@ Name - {}
 HOW_TXT = """Just send any Movie 
  ➤ Example: Home , Inception ..
 #ProTip: Copy paste Movie name from Google."""
+
+WELC_TXT = f"""<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>"""
