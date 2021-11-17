@@ -44,15 +44,16 @@ async def save_group(bot, message):
         await message.reply_text(
             text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
             reply_markup=reply_markup)
-    @Bot.on_message(filters.private & filters.media)
-async def _main(_, message):
+        
+@Client.on_message(filters.new_chat_members & filters.group)
+async def save_group(bot, message):
     await message.reply_text(
         f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
         parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Upload to GoFile.io", callback_data="uptogofile"),
+                [InlineKeyboardButton("❗HOW TO REQUEST❗", callback_data="HOW_TXT"),
                  InlineKeyboardButton("❣️ Main Channel", url="https://t.me/joinchat/Fhcssgw5H8wwMDBl")]
             ]
         ),
