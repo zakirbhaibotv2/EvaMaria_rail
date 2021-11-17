@@ -47,13 +47,13 @@ async def save_group(bot, message):
     @Bot.on_message(filters.private & filters.media)
 async def _main(_, message):
     await message.reply_text(
-        "Where you want to Upload?",
+        f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
         parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("Upload to GoFile.io", callback_data="uptogofile"),
-                 InlineKeyboardButton("Upload to Streamtape", callback_data="uptostreamtape")]
+                 InlineKeyboardButton("❣️ Main Channel", url="https://t.me/joinchat/Fhcssgw5H8wwMDBl")]
             ]
         ),
         quote=True
