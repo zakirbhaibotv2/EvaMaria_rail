@@ -51,7 +51,12 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
+            temp.MELCOW['welcome'] = await message.edit_text(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
+                                                             reply_markup=InlineKeyboardMarkup([
+
+                                     [InlineKeyboardButton("❗HOW TO REQUEST ❗", callback_data"https://t.me/malayayalies")]
+
+                                 ]))
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
