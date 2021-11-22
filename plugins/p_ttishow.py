@@ -53,9 +53,7 @@ async def save_group(bot, message):
                     pass
             temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
                                                          reply_markup=InlineKeyboardMarkup([
-
-                           [InlineKeyboardButton("❗ How To Request ❗", switch_inline_query_current_chat="")]
-
+                           [InlineKeyboardButton("❗ How To Request ❗", callback_data="how_btn")]
                        ]))
 
 
