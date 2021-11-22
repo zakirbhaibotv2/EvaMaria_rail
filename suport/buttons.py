@@ -7,4 +7,5 @@ support_btn = [
     [
         InlineKeyboardButton("🔰 SERIES", url="https://t.me/netflixorgi")
     ]
-support_btn = InlineKeyboardMarkup(setup)    
+    
+support_btn = InlineKeyboardMarkup(support)    
