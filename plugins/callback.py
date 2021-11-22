@@ -1,8 +1,4 @@
-
-elif update.data == "confirm_reset":
-        await db.delete_user(update.from_user.id)
-        await db.add_user(update.from_user.id)
-        await update.message.edit_text(
-            text="**Settings reset successfully**",
-            disable_web_page_preview=True,
-            reply_markup=HELP_BUTTONS
+@Bot.on_callback_query(filters.regex(r'^about_btn$'))
+async def help_about_button(c: Bot, cb: CallbackQuery):
+    await cb.answer()
+    await cb.message.edit(Presets.HELP_ABOUT_TXT, reply_markup=back_button, disable_web_page_preview=True)
