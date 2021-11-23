@@ -1,3 +1,4 @@
+from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 support_btn = [
@@ -8,4 +9,4 @@ support_btn = [
         InlineKeyboardButton("🔰 SERIES", url="https://t.me/netflixorgi")
     ]]
     
-support_btn = InlineKeyboardMarkup(suport)
+support_btn = InlineKeyboardMarkup(start)
