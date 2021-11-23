@@ -7,6 +7,7 @@ from database.ia_filterdb import Media
 from utils import get_size, temp
 from Script import script
 from pyrogram.errors import ChatAdminRequired
+from class pyrogram.types.Chat
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
 
@@ -52,7 +53,7 @@ async def save_group(bot, message):
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply_audio("https://hybridf2l.herokuapp.com/13a/4_5951903479080422091.ogg",
-                                                       caption=f"<b>Hey , {u.mention}, Welcome to {message.chat.title} {message.members_count}</b>",
+                                                       caption=f"<b>Hey , {u.mention}, Welcome to {message.chat.title} {members_count}</b>",
                                                          reply_markup=InlineKeyboardMarkup([
                            [InlineKeyboardButton("❗ How To Request ❗", callback_data="how_btn")]
                        ]))
