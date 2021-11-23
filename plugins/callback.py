@@ -3,6 +3,7 @@ from presets import Presets
 from pyrogram.types import CallbackQuery
 from suport.buttons import support_btn
 
+
 @Client.on_callback_query(filters.regex(r'^how_btn$'))
 async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
