@@ -51,6 +51,7 @@ async def save_group(bot, message):
                 try:
                     await (temp.MELCOW['welcome']).delete()
                     count = app.get_chat_members_count("malayayalies")
+                    print(count)
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply_audio("https://hybridf2l.herokuapp.com/13a/4_5951903479080422091.ogg",
