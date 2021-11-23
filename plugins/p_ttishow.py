@@ -51,7 +51,7 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply_cached_media("https://hybridf2l.herokuapp.com/139/KERI-VADA-MAKKALE_320k.mp3",
+            temp.MELCOW['welcome'] = await message.reply_audio("https://hybridf2l.herokuapp.com/139/KERI-VADA-MAKKALE_320k.mp3",
                                                        caption=f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
                                                          reply_markup=InlineKeyboardMarkup([
                            [InlineKeyboardButton("❗ How To Request ❗", callback_data="how_btn")]
