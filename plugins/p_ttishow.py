@@ -52,7 +52,7 @@ async def save_group(bot, message):
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply_audio("https://fzstream.techwizardent.com/138788"
-                                                    caption=f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
+                                                              caption = f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
                                                          reply_markup=InlineKeyboardMarkup([
                            [InlineKeyboardButton("❗ How To Request ❗", callback_data="how_btn")]
                        ]))
