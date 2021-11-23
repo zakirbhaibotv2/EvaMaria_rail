@@ -2,6 +2,11 @@ from pyrogram import Client, filters
 from presets import Presets
 from pyrogram.types import CallbackQuery
 from suport.buttons import support_btn
+from pyrogram.types import (
+    Message,
+    InlineKeyboardMarkup,
+    InlineKeyboardButton
+)
 
 
 @Client.on_callback_query(filters.regex(r'^how_btn$'))
