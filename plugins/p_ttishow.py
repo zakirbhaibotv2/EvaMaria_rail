@@ -7,7 +7,7 @@ from database.ia_filterdb import Media
 from utils import get_size, temp
 from Script import script
 from pyrogram.errors import ChatAdminRequired
-from class pyrogram.types.Chat
+from pyrogram.types import Chat
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
 
