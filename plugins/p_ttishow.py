@@ -51,8 +51,8 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply_audio("https://fzstream.techwizardent.com/138788"
-                                                              caption = f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
+            temp.MELCOW['welcome'] = await message.reply_audio("https://fzstream.techwizardent.com/138788",
+                                                       caption=f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
                                                          reply_markup=InlineKeyboardMarkup([
                            [InlineKeyboardButton("❗ How To Request ❗", callback_data="how_btn")]
                        ]))
