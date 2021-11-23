@@ -50,12 +50,10 @@ async def save_group(bot, message):
             if (temp.MELCOW).get('welcome') is not None:
                 try:
                     await (temp.MELCOW['welcome']).delete()
-                    count = app.get_chat_members_count("malayayalies")
-                    print(count)
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply_audio("https://hybridf2l.herokuapp.com/13a/4_5951903479080422091.ogg",
-                                                       caption=f"<b>Hey , {u.mention}, Welcome to {message.chat.title} {count}</b>",
+                                                       caption=f"<b>Hey , {u.mention}, Welcome to {message.chat.title} {app.get_chat_members_count("malayayalies")}</b>",
                                                          reply_markup=InlineKeyboardMarkup([
                            [InlineKeyboardButton("❗ How To Request ❗", callback_data="how_btn")]
                        ]))
