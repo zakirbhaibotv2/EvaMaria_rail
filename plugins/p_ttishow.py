@@ -46,6 +46,7 @@ async def save_group(bot, message):
             text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
             reply_markup=reply_markup)
     else:
+        total=await bot.get_chat_members_count(message.chat.id)
         for u in message.new_chat_members:
             if (temp.MELCOW).get('welcome') is not None:
                 try:
@@ -53,7 +54,7 @@ async def save_group(bot, message):
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply_audio("https://hybridf2l.herokuapp.com/13a/4_5951903479080422091.ogg",
-                                                       caption=f"<b>Hey , {u.mention}, Welcome to {message.chat.title} {bot.get_chat_members_count(message.chat.id)}</b>",
+                                                       caption=f"<b>Hey , {u.mention}, Welcome to {message.chat.title} {total}</b>",
                                                          reply_markup=InlineKeyboardMarkup([
                            [InlineKeyboardButton("❗ How To Request ❗", callback_data="how_btn")]
                        ]))
