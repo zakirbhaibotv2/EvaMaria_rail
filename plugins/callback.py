@@ -27,6 +27,5 @@ async def help_about_button(c: Client, cb: CallbackQuery):
             InlineKeyboardButton('🔰 SERIES', url='https://t.me/netflixorgi')
             ],[
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
-
         ]]
    
