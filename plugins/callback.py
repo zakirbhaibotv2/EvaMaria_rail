@@ -23,7 +23,7 @@ async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
     await cb.message.edit(Presets.HOW_TXT, disable_web_page_preview=True,
                           reply_markup=InlineKeyboardMarkup([
-                           [InlineKeyboardButton("Play Corsair!", url="https://tbot.xyz/corsairs",
+                           [InlineKeyboardButton("Basket Boy", url="https://prizes.gamee.com/game-bot/DwVcZZnbP",
                                                   "Play Lumber Jack!", url="https://tbot.xyz/lumber")],
-                           [InlineKeyboardButton("Play Math Battle!", url="https://tbot.xyz/math")]
+                           [InlineKeyboardButton("MotoFX 2", url="https://prizes.gamee.com/game-bot/motofx2")]
                        ]))
