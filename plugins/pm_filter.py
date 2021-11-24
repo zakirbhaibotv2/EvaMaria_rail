@@ -441,7 +441,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('♀️ 2nd GROUP', url='https://t.me/malayalam_cinmaa'),
             InlineKeyboardButton('🧩 FUN', callback_data='game_btn')
             ],[
-            ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
         ]]
