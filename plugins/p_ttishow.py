@@ -54,7 +54,7 @@ async def save_group(bot, message):
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply_audio("https://hybridf2l.herokuapp.com/13a/4_5951903479080422091.ogg",
-                                                       caption=f"<b>Hey , {u.mention}, Welcome to {message.chat.title} {total}</b>",
+                                                       caption=f"<b>Hey there {u.mention} and welcome to {message.chat.title} How are you? Your our {total} member.</b>",
                                                          reply_markup=InlineKeyboardMarkup([
                            [InlineKeyboardButton("❗ How To Request ❗", callback_data="how_btn")]
                        ]))
