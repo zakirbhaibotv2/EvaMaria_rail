@@ -41,7 +41,7 @@ async def help_about_button(c: Client, cb: CallbackQuery):
                     ),
                     InlineKeyboardButton(  # Opens the inline interface in the current chat
                         "Back",
-                        callback_data="pyrogram"
+                        callback_data="start"
                     )
                 ]
             ]
