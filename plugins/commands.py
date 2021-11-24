@@ -42,6 +42,9 @@ async def start(client, message):
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🔰 SERIES', url='https://t.me/netflixorgi')
             ],[
+            InlineKeyboardButton('♀️ 2nd GROUP', url='https://t.me/malayalam_cinmaa'),
+            InlineKeyboardButton('🧩 FUN', callback_data='game_btn')
+            ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
         ]]
@@ -82,6 +85,9 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🔰 SERIES', url='https://t.me/netflixorgi')
+            ],[
+            InlineKeyboardButton('♀️ 2nd GROUP', url='https://t.me/malayalam_cinmaa'),
+            InlineKeyboardButton('🧩 FUN', callback_data='game_btn')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
