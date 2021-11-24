@@ -24,5 +24,9 @@ async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.message.edit(Presets.GAME_TXT, disable_web_page_preview=True,
                           reply_markup=[[
             InlineKeyboardButton('〽️ MAIN CHANNEL 〽️', url='https://t.me/joinchat/Fhcssgw5H8wwMDBl')
+            InlineKeyboardButton('🔰 SERIES', url='https://t.me/netflixorgi')
             ],[
+            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+
+        ]]
    
