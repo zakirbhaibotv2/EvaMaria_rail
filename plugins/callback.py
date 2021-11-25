@@ -22,7 +22,7 @@ async def help_about_button(c: Client, cb: CallbackQuery):
 @Client.on_callback_query(filters.regex(r'^game_btn$'))
 async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
-    await cb.edit_message_media(InputMediaPhoto("AgACAgUAAxkBAAEOrYVhn6WNsZpzPKSrDp_hDvgxqeA3FAACJ7UxG9X98VQH9JbYrrq48wEAAwIAA3gAAyIE"), Presets.HOW_TXT,
+    await cb.edit_message_media(InputMediaPhoto("AgACAgUAAxkBAAEOrYVhn6WNsZpzPKSrDp_hDvgxqeA3FAACJ7UxG9X98VQH9JbYrrq48wEAAwIAA3gAAyIE"), Presets.GAME_TXT,
                           reply_markup=InlineKeyboardMarkup(
             [
                 [  # First row
