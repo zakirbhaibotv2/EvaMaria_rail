@@ -22,30 +22,30 @@ async def help_about_button(c: Client, cb: CallbackQuery):
 @Client.on_callback_query(filters.regex(r'^game_btn$'))
 async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
-    await cb.edit_message_media(InputMediaPhoto("AgACAgUAAxkBAAEOrYVhn6WNsZpzPKSrDp_hDvgxqeA3FAACJ7UxG9X98VQH9JbYrrq48wEAAwIAA3gAAyIE"), Presets.GAME_TXT,
-                          reply_markup=InlineKeyboardMarkup(
-            [
-                [  # First row
-                    InlineKeyboardButton(  # Generates a callback query when pressed
-                        "▶ Play - MotoFX 2",
-                        url="https://prizes.gamee.com/game-bot/motofx2"
-                    ),
-                    InlineKeyboardButton(  # Opens a web URL
-                        "▶ Play - Little Plane",
-                        url="https://prizes.gamee.com/game-bot/5IsYwla"
-                    ),
-                ],
-                [  # Second row
-                    InlineKeyboardButton(  # Opens the inline interface
-                        "▶ Play - Ride or Die",
-                        url="https://prizes.gamee.com/game-bot/rideordie"
-                    ),
-                    InlineKeyboardButton(  # Opens the inline interface in the current chat
-                        "Back",
-                        callback_data="start"
-                    )
-                ]
-            ]
-        )
+    await cb.edit_message_media(InputMediaPhoto("AgACAgUAAxkBAAEOrYVhn6WNsZpzPKSrDp_hDvgxqeA3FAACJ7UxG9X98VQH9JbYrrq48wEAAwIAA3gAAyIE"), Presets.GAME_TXT)
+                          #reply_markup=InlineKeyboardMarkup(
+           # [
+               # [  # First row
+                    #InlineKeyboardButton(  # Generates a callback query when pressed
+                        #"▶ Play - MotoFX 2",
+                        #url="https://prizes.gamee.com/game-bot/motofx2"
+                    #),
+                   # InlineKeyboardButton(  # Opens a web URL
+                       # "▶ Play - Little Plane",
+                       # url="https://prizes.gamee.com/game-bot/5IsYwla"
+                    #),
+                #],
+               # [  # Second row
+                  #  InlineKeyboardButton(  # Opens the inline interface
+                       # "▶ Play - Ride or Die",
+                       # url="https://prizes.gamee.com/game-bot/rideordie"
+                   # ),
+                    #InlineKeyboardButton(  # Opens the inline interface in the current chat
+                       # "Back",
+                        #callback_data="start"
+                    #)
+               # ]
+            #]
+        #)
     ) 
 
