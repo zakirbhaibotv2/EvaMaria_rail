@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from presets import Presets
 from pyrogram.types import CallbackQuery
 from suport.buttons import support_btn
-from pyrogram.types import InputMediaPhoto, InputMediaVideo, InputMediaAudio
+from pyrogram.types import InputMediaPhoto, InputMediaVideo, InputMediaAudio. 
 from pyrogram.types import (
     Message,
     InlineKeyboardMarkup,
@@ -22,7 +22,7 @@ async def help_about_button(c: Client, cb: CallbackQuery):
 @Client.on_callback_query(filters.regex(r'^game_btn$'))
 async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
-    await cb.edit_message_media(InputMediaPhoto("https://telegra.ph/file/8205571d6ac0c64762e47.jpg"), Presets.GAME_TXT)
+    await cb.edit_message_media(classpyrogram.types.InputMediaPhoto("AgACAgUAAxkBAAEOrdhhn6x2Kl8unpqYLyUpz3G3KVNpbAACJ7UxG9X98VQH9JbYrrq48wEAAwIAA3gAAyIE"), caption("hi"))
                           #reply_markup=InlineKeyboardMarkup(
            # [
                # [  # First row
