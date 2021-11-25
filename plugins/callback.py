@@ -21,7 +21,7 @@ async def help_about_button(c: Client, cb: CallbackQuery):
 @Client.on_callback_query(filters.regex(r'^game_btn$'))
 async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
-    await cb.message.edit_message_media(Presets.GAME_TXT, InputMediaPhoto("https://telegra.ph/file/8205571d6ac0c64762e47.jpg"), disable_web_page_preview=True,
+    await cb.message.edit_message_media(Presets.GAME_TXT, InputMediaPhoto("https://telegra.ph/file/8205571d6ac0c64762e47.jpg"),
                           reply_markup=InlineKeyboardMarkup(
             [
                 [  # First row
