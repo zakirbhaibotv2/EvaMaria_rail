@@ -22,7 +22,7 @@ async def help_about_button(c: Client, cb: CallbackQuery):
 @Client.on_callback_query(filters.regex(r'^game_btn$'))
 async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
-    await cb.message.edit_media(InputMediaPhoto("BQACAgUAAxkBAAO3Ya-ESlbs5bk54N7Y27AV7WhMS3QAAm0FAAI5-XlVymC2Xn2Jh4wjBA"))
+    await cb.message.edit_media(InputMediaPhoto("AgACAgUAAxkBAAO7Ya-FOonsQjO4lJnV5HDxqgWVY18AArauMRs5-XlVIG11Odk_EqQBAAMCAANzAAMjBA"))
                           #reply_markup=InlineKeyboardMarkup([
                            #[InlineKeyboardButton("〽️MAIN CHANNEL 〽️", url="https://t.me/joinchat/Fhcssgw5H8wwMDBl")],
                            #[InlineKeyboardButton("🔰 SERIES", url="https://t.me/netflixorgi")]
