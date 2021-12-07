@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from presets import Presets
 from pyrogram.types import CallbackQuery
 from suport.buttons import support_btn
-from pyrogram.types import InputMediaPhoto, InputMediaVideo, InputMediaAudio. 
+from pyrogram.types import InputMediaPhoto, InputMediaVideo, InputMediaAudio
 from pyrogram.types import (
     Message,
     InlineKeyboardMarkup,
