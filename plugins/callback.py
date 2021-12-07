@@ -19,33 +19,6 @@ async def help_about_button(c: Client, cb: CallbackQuery):
                            [InlineKeyboardButton("🔰 SERIES", url="https://t.me/netflixorgi")]
                        ]))
 
-@Client.on_callback_query(filters.regex(r'^game_btn$'))
-async def help_about_button(c: Client, cb: CallbackQuery):
-    await cb.answer()
-    await cb.edit_message_media(classpyrogram.types.InputMediaPhoto("AgACAgUAAxkBAAEOrdhhn6x2Kl8unpqYLyUpz3G3KVNpbAACJ7UxG9X98VQH9JbYrrq48wEAAwIAA3gAAyIE"), caption("hi"))
-                          #reply_markup=InlineKeyboardMarkup(
-           # [
-               # [  # First row
-                    #InlineKeyboardButton(  # Generates a callback query when pressed
-                        #"▶ Play - MotoFX 2",
-                        #url="https://prizes.gamee.com/game-bot/motofx2"
-                    #),
-                   # InlineKeyboardButton(  # Opens a web URL
-                       # "▶ Play - Little Plane",
-                       # url="https://prizes.gamee.com/game-bot/5IsYwla"
-                    #),
-                #],
-               # [  # Second row
-                  #  InlineKeyboardButton(  # Opens the inline interface
-                       # "▶ Play - Ride or Die",
-                       # url="https://prizes.gamee.com/game-bot/rideordie"
-                   # ),
-                    #InlineKeyboardButton(  # Opens the inline interface in the current chat
-                       # "Back",
-                        #callback_data="start"
-                    #)
-               # ]
-            #]
-        #)
-   # ) 
 
+
+                          
