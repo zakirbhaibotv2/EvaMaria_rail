@@ -49,7 +49,7 @@ async def help_about_button(c: Client, cb: CallbackQuery):
                 [  # Second row
                     InlineKeyboardButton(
                         "🔙 Back",
-                        callback_data="strat"
+                        callback_data="start"
                     ),
                     InlineKeyboardButton(
                         "🔒 Close",
