@@ -3,7 +3,7 @@ class Presets(object):
   GAME_TXT = "Fun Module:\n Nothing Much Just Some Little Timepasses"
   MUSIC_TXT = "🎼Song Download🎼\nSong Download Module, For Those Who Love Music\n\n
                🎈 Command 🎈\n\n
-               - /song [Song Name] - To Download Music\n\n
+               - /song [Song Name] - To Download Music.\n\n
                @malayayalies"
 
  
