@@ -29,32 +29,31 @@ async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
     await cb.message.edit(Presets.GAME_TXT, disable_web_page_preview=True,
                           reply_markup=InlineKeyboardMarkup(
-                              [
-                               [  # First row
-                    InlineKeyboardButton(  # Generates a callback query when pressed
+            [
+                [  
+                    InlineKeyboardButton(
                         "Lumber Jack",
-                        url='https://tbot.xyz/lumber/'
+                        url="https://tbot.xyz/lumber/"
                     ),
-                    InlineKeyboardButton(  # Opens a web URL
+                    InlineKeyboardButton(
                         "Corasirs",
                         url="https://tbot.xyz/corsairs/"
                     ),
                 ],
                 [
-                    InlineKeyboardButton(
+                    InlineKeyboradButton(
                          "Math Battle"
-                         url='https://tbot.xyz/math/'
+                         url="https://tbot.xyz/math/"
                     ),
                 ],
                 [  # Second row
-                    InlineKeyboardButton(  # Opens the inline interface
+                    InlineKeyboardButton(
                         "🔙 Back",
-                        callback_data="start"
+                        callback_data="strat"
                     ),
-                    InlineKeyboardButton(  # Opens the inline interface in the current chat
+                    InlineKeyboardButton(
                         "🔒 Close",
-                        callback_data="Close_data"
-
+                        callback_data="close_data"
                     )
                 ]
             ]
