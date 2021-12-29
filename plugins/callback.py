@@ -60,3 +60,10 @@ async def help_about_button(c: Client, cb: CallbackQuery):
         )
     )
 
+@Client.on_callback_query(filters.regex(r'^music_btn$'))
+async def help_about_button(c: Client, cb: CallbackQuery):
+    await cb.answer()
+    await cb.message.edit(Presets.MUSIC_TXT, disable_web_page_preview=True,
+                          reply_markup=InlineKeyboardMarkup([
+                           [InlineKeyboardButton("🔰 SERIES", url="https://t.me/netflixorgi")]
+                       ])
