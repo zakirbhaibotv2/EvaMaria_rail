@@ -64,6 +64,6 @@ async def help_about_button(c: Client, cb: CallbackQuery):
 async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
     await cb.message.edit(Presets.MUSIC_TXT, disable_web_page_preview=True,
-                          reply_markup=InlineKeyboardMarkup([
+                          reply_markup=InlineKeyboardMarkup[
                            [InlineKeyboardButton("🔙 Back", callback_data="start")]
-                       )]
+                         ]
