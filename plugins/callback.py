@@ -37,4 +37,3 @@ async def help_about_button(c: Client, cb: CallbackQuery):
             InlineKeyboardButton('🔙 Back', callback_data='start'),
             InlineKeyboardButton('🔒 Close', callback_data='close_data')
          ]]
-     
