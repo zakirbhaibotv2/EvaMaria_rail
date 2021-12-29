@@ -32,17 +32,17 @@ async def help_about_button(c: Client, cb: CallbackQuery):
             [
                 [  
                     InlineKeyboardButton(
-                        "Lumber Jack",
+                        "Lumber Jack 🧩",
                         url="https://tbot.xyz/lumber/"
                     ),
                     InlineKeyboardButton(
-                        "Corasirs",
+                        "Corasirs 🎮",
                         url="https://tbot.xyz/corsairs/"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                         "Math Battle",
+                         "Math Battle 🧮",
                          url="https://tbot.xyz/math/"
                     ),
                 ],
@@ -64,7 +64,6 @@ async def help_about_button(c: Client, cb: CallbackQuery):
 async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
     await cb.message.edit(Presets.MUSIC_TXT, disable_web_page_preview=True,
-                          buttons = [[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
+                          reply_markup=InlineKeyboardMarkup([
+                                     [InlineKeyboardButton("🔙 Back", callback_data="start")]
+                                 ]))
