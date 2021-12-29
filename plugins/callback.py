@@ -34,6 +34,6 @@ async def help_about_button(c: Client, cb: CallbackQuery):
             ],[
             InlineKeyboardButton('Music 🎶', url='https://tbot.xyz/math/#eyJ1Ijo2MTcyNzA3MDIsIm4iOiJULkcgVGFubmhhdXMgIiwiZyI6Ik1hdGhCYXR0bGUiLCJjaSI6IjM5MzY2NzY4MDM4NDk5NDk3OTciLCJpIjoiQlFBQUFGY0ZBUUN1emNva3JUWTdMQTgxOTBzIn0yODk2YTk1YzI5ZGVlODg4ZjZjN2Q5ZDQyOTExNGQyZg')
             ],[
-            InlineKeyboardButton('🔙 Back', callback_data=''),
+            InlineKeyboardButton('🔙 Back', callback_data='start'),
             InlineKeyboardButton('🔒 Close', callback_data='close_data')
         ]]
