@@ -65,5 +65,5 @@ async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
     await cb.message.edit(Presets.MUSIC_TXT, disable_web_page_preview=True,
                           reply_markup=InlineKeyboardMarkup([
-                           [InlineKeyboardButton("🔰 SERIES", url="https://t.me/netflixorgi")]
+                           [InlineKeyboardButton("🔙 Back", callback_data="start")]
                        ])
