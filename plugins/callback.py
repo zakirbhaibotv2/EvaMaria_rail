@@ -42,7 +42,7 @@ async def help_about_button(c: Client, cb: CallbackQuery):
                 ],
                 [
                     InlineKeyboradButton(
-                         "Math Battle"
+                         "Math Battle",
                          url="https://tbot.xyz/math/"
                     ),
                 ],
