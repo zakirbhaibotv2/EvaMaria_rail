@@ -24,7 +24,7 @@ async def help_about_button(c: Client, cb: CallbackQuery):
                            [InlineKeyboardButton("🔰 SERIES", url="https://t.me/netflixorgi")]
                        ]))
 
-@Client.on_callback_query(filters.regex(r'^game_btn$'))
+@Client.on_callback_query(filters.regex(r'^gum_btn$'))
 async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
     await cb.message.edit(Presets.GAME_TXT, disable_web_page_preview=True,
