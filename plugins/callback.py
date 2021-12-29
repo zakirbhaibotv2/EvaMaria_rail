@@ -29,4 +29,5 @@ async def help_about_button(c: Client, cb: CallbackQuery):
     await cb.answer()
     await cb.message.edit(Presets.GAME_TXT, disable_web_page_preview=True,
                           reply_markup=InlineKeyboardMarkup(
+                              vvvv
             
