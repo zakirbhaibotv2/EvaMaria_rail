@@ -17,9 +17,7 @@ from pyrogram.types import Chat
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
 
-audio_file = "AwACAgUAAxkBAAPIYc0rLmTrlPV090u_jkeBhaQk4V8AAnEEAAIXrGhWVWbRuS3mMO8jBA"
-thumbnail = "https://telegra.ph/file/cdc605b8675b0226bcfb3.jpg"
-captionnew = f"Hey there {u.mention} and welcome to {message.chat.title} How are you? Your our {total} member."
+
 
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
