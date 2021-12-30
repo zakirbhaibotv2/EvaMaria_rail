@@ -59,7 +59,7 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply_voice("CQACAgQAAxkBAAO_Ycxo6rxh1Xo3dtcQTBN1Q-bCKbgAAssKAAKuaJlSoYO8NvI-MHUjBA",
+            temp.MELCOW['welcome'] = await message.reply_voice("BQACAgQAAxkBAAPDYc0p6uGHtqHYb6DZxF7cz81SmRgAApELAAIUrWhSL7d4FfYYkLUjBA",
                                                        caption=f"Hey there {u.mention} and welcome to {message.chat.title} How are you? Your our {total} member.",
                                                          reply_markup=InlineKeyboardMarkup([
                            [InlineKeyboardButton("❗ How To Request ❗", callback_data="how_btn")]
