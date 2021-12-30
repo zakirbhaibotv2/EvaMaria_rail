@@ -54,9 +54,9 @@ async def save_group(bot, message):
     else:
         audio_file = "AwACAgUAAxkBAAPIYc0rLmTrlPV090u_jkeBhaQk4V8AAnEEAAIXrGhWVWbRuS3mMO8jBA"
         thumbnail = "https://telegra.ph/file/cdc605b8675b0226bcfb3.jpg"
-        captionnew = f"Hey there {u.mention} and welcome to {message.chat.title} How are you? Your our {total} member."
         total=await bot.get_chat_members_count(message.chat.id)
         for u in message.new_chat_members:
+            captionnew = f"Hey there {u.mention} and welcome to {message.chat.title} How are you? Your our {total} member."
             if (temp.MELCOW).get('welcome') is not None:
                 try:
                     await (temp.MELCOW['welcome']).delete()
