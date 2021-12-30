@@ -52,7 +52,7 @@ async def save_group(bot, message):
             text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
             reply_markup=reply_markup)
     else:
-        audio_file = "AwACAgUAAxkBAAPIYc0rLmTrlPV090u_jkeBhaQk4V8AAnEEAAIXrGhWVWbRuS3mMO8jBA"
+        audio_file = "CQACAgQAAxkBAAPNYc3QTMD6Yh6VAp3mrebsG-g-fdgAAssKAAKuaJlSoYO8NvI-MHUjBA"
         thumbnail = "https://telegra.ph/file/cdc605b8675b0226bcfb3.jpg"
         total=await bot.get_chat_members_count(message.chat.id)
         for u in message.new_chat_members:
