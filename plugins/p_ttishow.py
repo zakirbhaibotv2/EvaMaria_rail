@@ -59,7 +59,9 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply_voice("AwACAgUAAxkBAAPIYc0rLmTrlPV090u_jkeBhaQk4V8AAnEEAAIXrGhWVWbRuS3mMO8jBA",
+                audio_file = "AwACAgUAAxkBAAPIYc0rLmTrlPV090u_jkeBhaQk4V8AAnEEAAIXrGhWVWbRuS3mMO8jBA"
+                thumbnail = "https://telegra.ph/file/cdc605b8675b0226bcfb3.jpg"
+            temp.MELCOW['welcome'] = await message.reply_audio(audio_file, thumb=thumbnail,
                                                        caption=f"Hey there {u.mention} and welcome to {message.chat.title} How are you? Your our {total} member.",
                                                          reply_markup=InlineKeyboardMarkup([
                            [InlineKeyboardButton("❗ How To Request ❗", callback_data="how_btn")]
