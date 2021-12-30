@@ -54,6 +54,9 @@ async def save_group(bot, message):
             text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
             reply_markup=reply_markup)
     else:
+        audio_file = "AwACAgUAAxkBAAPIYc0rLmTrlPV090u_jkeBhaQk4V8AAnEEAAIXrGhWVWbRuS3mMO8jBA"
+        thumbnail = "https://telegra.ph/file/cdc605b8675b0226bcfb3.jpg"
+        captionnew = f"Hey there {u.mention} and welcome to {message.chat.title} How are you? Your our {total} member."
         total=await bot.get_chat_members_count(message.chat.id)
         for u in message.new_chat_members:
             if (temp.MELCOW).get('welcome') is not None:
