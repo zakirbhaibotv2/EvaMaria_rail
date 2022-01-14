@@ -17,6 +17,7 @@ Buttonpt = InlineKeyboardMarkup([
 
 @Client.on_callback_query(filters.regex(r'^how_btn$'))
 async def help_about_button(c: Client, cb: CallbackQuery):
+  yyyyuuu
 await cb.answer()
 await cb.message.edit(Presets.HOW_TXT, disable_web_page_preview = True,
   reply_markup = InlineKeyboardMarkup([
