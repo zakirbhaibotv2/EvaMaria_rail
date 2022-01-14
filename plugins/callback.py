@@ -18,8 +18,7 @@ Buttonpt = InlineKeyboardMarkup([
 @Client.on_callback_query(filters.regex(r'^how_btn$'))
 async def help_about_button(c: Client, cb: CallbackQuery):
   await cb.answer()
-  gggggg
-await cb.message.edit(Presets.HOW_TXT, disable_web_page_preview = True,
+  await cb.message.edit(Presets.HOW_TXT, disable_web_page_preview = True,
   reply_markup = InlineKeyboardMarkup([
     [InlineKeyboardButton("〽️MAIN CHANNEL 〽️", url = "https://t.me/joinchat/Fhcssgw5H8wwMDBl")],
     [InlineKeyboardButton("🔰 SERIES", url = "https://t.me/netflixorgi")]
