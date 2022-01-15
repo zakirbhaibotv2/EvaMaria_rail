@@ -51,22 +51,6 @@ async def save_group(bot, message):
         await message.reply_text(
             text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
             reply_markup=reply_markup)
-    else:
-        audio_file = "https://nitesh696969.kushwaniteah.workers.dev/0:/KERI%20VADA%20MAKKALE_320k%283%29.mp3"
-        thumbnail = "https://telegra.ph/file/cdc605b8675b0226bcfb3.jpg"
-        total=await bot.get_chat_members_count(message.chat.id)
-        for u in message.new_chat_members:
-            captionnew = f"Hey there {u.mention} and welcome to {message.chat.title} How are you? Your our {total} member."
-            if (temp.MELCOW).get('welcome') is not None:
-                try:
-                    await (temp.MELCOW['welcome']).delete()
-                except:
-                    pass
-            temp.MELCOW['welcome'] = await message.reply_audio(audio_file, caption=captionnew, thumb=thumbnail,
-                                                         reply_markup=InlineKeyboardMarkup([
-                           [InlineKeyboardButton("❗ How To Request ❗", callback_data="how_btn")]
-                       ]))
-
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
