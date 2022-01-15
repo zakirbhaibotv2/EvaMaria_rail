@@ -8,6 +8,5 @@ requests
 bs4
 imdbpy
 youtube_search
-youtube_dl
 aiohttp
 asyncio
