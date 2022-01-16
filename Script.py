@@ -109,3 +109,5 @@ HOW_TXT = """Just send any Movie
 #ProTip: Copy paste Movie name from Google."""
 
 #WELC_TXT = f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>"
+
+how_twt = "wpw"
