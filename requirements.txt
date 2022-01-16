@@ -10,4 +10,4 @@ imdbpy
 youtube_search
 aiohttp
 asyncio
-youtube_dl
+
